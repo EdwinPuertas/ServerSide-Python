@@ -3,7 +3,7 @@ class Person(object):
     Class used to represent an Person
     """
 
-    def __init__(self, id_person: int, name: str = 'Name', last_name: str = "LastName"):
+    def __init__(self, id_person: int = 0, name: str = 'Name', last_name: str = "LastName"):
         """ Person constructor object.
 
         :param id_person: id of person.
@@ -62,7 +62,7 @@ class Person(object):
     @last_name.setter
     def last_name(self, last_name: str):
         """ The last name of the person.
-        :param last_name: last name of person.
+        : param last_name: last name of person.
         :type: str
         """
         self._last_name = last_name
@@ -81,3 +81,5 @@ if __name__ == '__main__':
     edwin.name = "Edwin. A"
     print(edwin)
 
+    juan = Person()
+    print(juan)
