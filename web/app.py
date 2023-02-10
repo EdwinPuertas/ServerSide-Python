@@ -52,7 +52,7 @@ def person_delete(id_person):
         if model[i].id_person == id_person:
             model.pop(i)
             break
-    return render_template('/people')
+    return render_template('people.html')
 
 
 if __name__ == '__main__':
