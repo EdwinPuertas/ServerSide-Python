@@ -1,6 +1,6 @@
 class Person(object):
     """
-    Class used to represent an Person
+    Class used to represent a Person
     """
 
     def __init__(self, id_person: int = 0, name: str = 'Name', last_name: str = "LastName"):
@@ -62,7 +62,7 @@ class Person(object):
     @last_name.setter
     def last_name(self, last_name: str):
         """ The last name of the person.
-        : param last_name: last name of person.
+        :param last_name: last name of person.
         :type: str
         """
         self._last_name = last_name
@@ -78,6 +78,7 @@ class Person(object):
 if __name__ == '__main__':
 
     edwin = Person(id_person=73577376, name="Edwin", last_name="Puertas")
+    print(edwin)
     edwin.name = "Edwin. A"
     print(edwin)
 

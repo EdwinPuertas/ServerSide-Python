@@ -51,8 +51,8 @@ def person_delete(id_person):
     for i in range(0, len(model)):
         if model[i].id_person == id_person:
             model.pop(i)
-            break
-    return render_template('people.html')
+    data = [(i.id_person, i.name, i.last_name) for i in model]
+    return render_template('people.html', value=data)
 
 
 if __name__ == '__main__':
